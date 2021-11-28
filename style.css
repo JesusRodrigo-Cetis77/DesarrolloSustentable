@@ -1,0 +1,294 @@
+/*  Toda la pagina  */
+body {
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  background-color: #fff;
+}
+
+.container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+/*  Menu de navegacion  */
+.contenedor {
+  width: 93vw;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.header {
+  background: #333;
+  color: #fff;
+  padding: 0.3rem 0;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-nav-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  letter-spacing: 15px;
+  font-size: 1.4em;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.navegacion ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navegacion ul li {
+  display: inline-block;
+}
+
+.navegacion ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.6s linear;
+  border-radius: 8px;
+}
+
+.navegacion ul li a:hover {
+  background-color: #32a85c;
+}
+/*  Cabecera  */
+
+.title {
+  text-align: center;
+  line-height: 1.8em;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+
+/*  Cuerpo de la pagina  */
+
+.cuerpo {
+  padding-left: 3vw;
+  float: left;
+  width: 70vw;
+}
+
+.cuerpo__h2 {
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  clear: both;
+}
+
+.imagenes {
+  margin-top: 3vh;
+  display: block;
+  margin-left: 1em;
+  width: 61vw;
+  height: 50vh;
+}
+
+.cuerpo__parrafo {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+  margin-left: 1em;
+  margin-top: 2vh;
+  padding-top: 0;
+  text-align: justify;
+  width: 91.5%;
+  clear: both;
+}
+
+/* Barra lateral en vista de escritorio */
+
+.aside__lateral {
+  font-family: "Raleway", sans-serif;
+  width: 27vw;
+  border-left: 2px solid;
+  float: right;
+  position: sticky;
+  top: 10vh;
+}
+
+.aside__h2 {
+  margin-bottom: 2vh;
+  padding-left: 1vw;
+}
+
+.indice {
+  font-family: "Raleway", sans-serif;
+  padding-left: 5vw;
+}
+
+.indice ol li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  display: none;
+}
+
+/* Pie de pagina*/
+
+footer {
+  background-color: #f2f2f2;
+  padding: 4rem;
+  text-align: center;
+  clear: both;
+}
+
+/*  Estilos para los dispositivos moviles  */
+
+@media only screen and (max-width: 800px) {
+  /*  Menu de navegacion  */
+  .header {
+    padding: 0;
+  }
+
+  .contenedor {
+    padding-top: 0.3rem;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 6vw;
+    padding-top: 0.3rem;
+  }
+
+  .navegacion {
+    width: 100vw;
+    margin-top: 1rem;
+  }
+
+  .navegacion ul {
+    display: none;
+  }
+
+  .navegacion ul.show-index {
+    display: block;
+  }
+
+  .navegacion ul li {
+    display: block;
+  }
+
+  .navegacion ul li a {
+    display: block;
+    padding: 1rem 1rem;
+    transition: all 0.6s linear;
+    border-radius: 8px;
+  }
+
+  .navegacion ul li a:hover {
+    background-color: #32a85c;
+  }
+
+  /*  Indice de la pagina */
+  .barra ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /*  Botón para el indice  */
+  #btn-mas {
+    display: none;
+  }
+
+  #btn-mas:checked ~ .index_mobile a {
+    margin-bottom: 1vw;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .container {
+    display: block;
+    position: fixed;
+    bottom: 5vw;
+    left: 50vw;
+  }
+
+  .index_mobile a,
+  .index_text {
+    display: block;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3vw;
+    width: 40vw;
+    height: 6vh;
+    line-height: 6vh;
+    text-align: center;
+    transition: all 0.6s ease;
+  }
+
+  .index_mobile a:hover {
+    background: #32a85c;
+  }
+
+  .index_mobile a {
+    margin-bottom: -4vh;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /*  Cuerpo de la pagina  */
+  .title {
+    margin: 0;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-bottom: 2vh;
+  }
+
+  .cuerpo {
+    margin: 0;
+    padding: 0vw;
+    width: 100vw;
+  }
+
+  .cuerpo__h2 {
+    margin: 0;
+    padding-left: 7vw;
+    padding-bottom: 2vh;
+    width: 100vw;
+  }
+
+  .imagenes {
+    margin: 0;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-bottom: 1vh;
+    width: 100vw;
+  }
+
+  .cuerpo__parrafo {
+    margin: 0;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    width: 100vw;
+  }
+
+  /*  Barra lateral en vista de escritorio(No editar esta parte) */
+  .aside__lateral {
+    display: none;
+  }
+}
