@@ -70,6 +70,7 @@ body {
 .navegacion ul li a:hover {
   background-color: #32a85c;
 }
+
 /*  Cabecera  */
 
 .title {
@@ -292,3 +293,4 @@ footer {
     display: none;
   }
 }
+

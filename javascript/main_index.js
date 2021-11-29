@@ -10,4 +10,4 @@ function desplegar_index() {
   } else {
     document.getElementById("navegar-index").classList.add("show-index");
   }
-}
+} 
