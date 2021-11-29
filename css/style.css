@@ -268,8 +268,7 @@ footer {
 
   .cuerpo__h2 {
     margin: 0;
-    padding-left: 7vw;
-    padding-bottom: 2vh;
+    padding:0 7vw 2vh 7vw;
     width: 100vw;
   }
 
