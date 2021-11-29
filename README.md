@@ -1,2 +1,0 @@
-# DesarrolloSustentable
-Created with CodeSandbox
