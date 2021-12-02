@@ -11,3 +11,4 @@ function desplegar_index() {
     document.getElementById("navegar").classList.add("show");
   }
 } 
+
