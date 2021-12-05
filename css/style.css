@@ -57,6 +57,10 @@
   }
 }
 /*  Toda la pagina  */
+html {
+  scroll-behavior: smooth;
+} 
+
 .body {
   color: #333;
   font-size: 1.2rem;
@@ -141,7 +145,6 @@
 }
 
 /*  Cuerpo de la pagina  */
-
 .cuerpo {
   padding-left: 3vw;
   float: left;
