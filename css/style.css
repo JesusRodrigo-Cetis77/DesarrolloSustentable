@@ -1,65 +1,69 @@
 /*Pre loader*/
-
 .loader {
   position: fixed;
-  background: #333;
-  color: #fff;
-  width: 100%;
-  min-height: 100%;
-
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
 }
 
-.preloader {
-  margin: auto;
-
-  width: 350px;
-  height: 30px;
-  background: rgb(255, 255, 255, 0.1);
-
-  position: relative;
+.loader div:nth-child(1) {
+  position: fixed;
+  border: 10px solid transparent;
+  border-top-color: rgba(4, 238, 187, 0.533);
+  border-left-color: rgba(4, 238, 187, 0.533);
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  animation: spin1 3s linear infinite;
 }
 
-.preloader:before {
-  content: "";
-  position: absolute;
-  background: #32a85c;
-  width: 0;
-  height: 30px;
-
-  animation: preloader 10s infinite;
+.loader div:nth-child(2) {
+  position: fixed;
+  border: 10px solid transparent;
+  border-bottom-color: #32a85c;
+  border-right-color: #32a85c;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  animation: spin2 2s linear infinite;
 }
 
-.preloader p {
-  margin: 0;
-  line-height: 30px;
-  font-size: 30px;
-  font-weight: bold;
+.loader div:nth-child(3) {
+  position: fixed;
+  border: 10px solid transparent;
+  border-top-color: rgb(4, 238, 187, 0.533);
+  border-left-color: rgba(4, 238, 187, 0.533);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  animation:  spin1 1s linear infinite;
+} 
 
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.cerrar {
-  transform: translateY(-100%);
-  transition: all 0.5s;
-}
-
-@keyframes preloader {
-  90% {
-    width: 100%;
-    opacity: 1;
+@keyframes spin1 {
+  0%{
+    transform: rotate(0deg);
   }
-  100% {
-    width: 100%;
-    opacity: 0;
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
   }
 }
 /*  Toda la pagina  */
 html {
   scroll-behavior: smooth;
-} 
+}
 
 .body {
   color: #333;
